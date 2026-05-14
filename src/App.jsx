@@ -1,15 +1,21 @@
 import { useState } from "react";
 import { C } from "./shared";
 import Resumen       from "./Resumen";
+import Demografia    from "./Demografia";
 import EstresSueno   from "./EstresSueno";
 import Burnout       from "./Burnout";
 import Productividad from "./Productividad";
 import Dispersion    from "./Dispersion";
+import Conclusiones  from "./Conclusiones";
 
 const NAV = [
   {
     label: "Resumen",
     icon: <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M3 3h8v8H3zm0 10h8v8H3zM13 3h8v8h-8zm0 10h8v8h-8z"/></svg>,
+  },
+  {
+    label: "Demografia",
+    icon: <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>,
   },
   {
     label: "Estres y Sueno",
@@ -27,17 +33,23 @@ const NAV = [
     label: "Dispersion",
     icon: <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><circle cx="5" cy="18" r="1.5"/><circle cx="8" cy="12" r="1.5"/><circle cx="12" cy="15" r="1.5"/><circle cx="15" cy="8" r="1.5"/><circle cx="18" cy="11" r="1.5"/><circle cx="20" cy="5" r="1.5"/><circle cx="10" cy="6" r="1.5"/><circle cx="6" cy="7" r="1.5"/></svg>,
   },
+  {
+    label: "Conclusiones",
+    icon: <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>,
+  },
 ];
 
 const PAGE_TITLES = [
   "Resumen del Estado de la Investigacion",
+  "Perfil Demografico del Dataset",
   "Estres y Calidad del Sueno",
   "Analisis de Burnout",
   "Productividad Laboral",
   "Dispersion: Estres vs. Productividad",
+  "Conclusiones e Interpretacion",
 ];
 
-const TABS = [Resumen, EstresSueno, Burnout, Productividad, Dispersion];
+const TABS = [Resumen, Demografia, EstresSueno, Burnout, Productividad, Dispersion, Conclusiones];
 
 export default function App() {
   const [tab, setTab] = useState(0);
@@ -122,7 +134,7 @@ export default function App() {
                   color: active ? C.orange : C.sub,
                   border: "none", borderRadius: 8,
                   padding: "12px 16px",
-                  fontSize: 17, fontWeight: active ? 700 : 600,
+                  fontSize: 16, fontWeight: active ? 700 : 600,
                   letterSpacing: "0.05em",
                   cursor: "pointer", fontFamily: "Inter,sans-serif",
                   transition: "background 0.15s, color 0.15s",
