@@ -5,7 +5,7 @@ export default function Dispersion() {
   return (
     <div>
       <SectionTitle>Grafico de Dispersion: Estres vs. Productividad</SectionTitle>
-      <ChartCard title="Muestra de ~78 empleados · color = nivel de burnout">
+      <ChartCard title="Muestra de 78 empleados color = nivel de burnout">
         <div style={{ display: "flex", gap: 20, marginBottom: 14, flexWrap: "wrap" }}>
           {[[C.red, "Burnout Alto"], [C.orange, "Burnout Medio"], [C.green, "Burnout Bajo"]].map(([color, label]) => (
             <span key={label} style={{ display: "flex", alignItems: "center", gap: 7, ...NOTE_STYLE, color: C.sub }}>
@@ -29,7 +29,6 @@ export default function Dispersion() {
               label={{ value: "Productividad", fill: C.sub, ...TICK, angle: -90, position: "insideLeft", offset: 15 }}
             />
             <Tooltip content={<ScatterTT />} cursor={{ strokeDasharray: "3 3" }} />
-            <Legend wrapperStyle={{ ...TICK, color: C.sub }} />
             <Scatter name="Burnout Bajo"  data={scatterLow}  fill={C.green}  opacity={0.85} />
             <Scatter name="Burnout Medio" data={scatterMed}  fill={C.orange} opacity={0.85} />
             <Scatter name="Burnout Alto"  data={scatterHigh} fill={C.red}    opacity={0.85} />

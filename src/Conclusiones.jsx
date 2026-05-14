@@ -5,7 +5,7 @@ const findings = [
   {
     icon: "😴",
     color: C.teal,
-    title: "El sueno es el factor mas determinante",
+    title: "El sueño es el factor mas determinante",
     body: "Empleados que duermen entre 10-11h registran una productividad promedio de 80.1/100, un 34% superior a quienes duermen menos de 5h (59.9/100). Es la variable con mayor impacto lineal en el dataset.",
     tag: "OBJ. 2 y 3",
   },
@@ -47,7 +47,7 @@ const findings = [
 ];
 
 const recommendations = [
-  { text: "Implementar politicas de higiene del sueno en entornos laborales — es la intervencion con mayor retorno potencial.", icon: "✓" },
+  { text: "Implementar politicas de higiene del sueño en entornos laborales — es la intervencion con mayor retorno potencial.", icon: "✓" },
   { text: "Promover actividad fisica moderada (6-8h/sem) como parte de programas de bienestar corporativo.", icon: "✓" },
   { text: "Revisar las cargas horarias: reducir semanas de mas de 50h puede mejorar la productividad sostenida.", icon: "✓" },
   { text: "El apoyo en salud mental es necesario pero insuficiente solo: debe combinarse con cambios estructurales para reducir el burnout.", icon: "✓" },

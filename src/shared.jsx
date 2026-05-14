@@ -72,7 +72,7 @@ export const workHoursProd = [
 ];
 
 export const radarData = [
-  { variable: "Sueno",         value: 63 },
+  { variable: "Sueño",         value: 63 },
   { variable: "Productividad", value: 70 },
   { variable: "Act. Fisica",   value: 50 },
   { variable: "Bajo Estres",   value: 38 },

@@ -8,7 +8,7 @@ export default function Resumen() {
       <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 22 }}>
         <KpiCard label="Empleados"     value="1,500"               unit=""      sub="10 paises - 6 industrias" color={C.navy}   />
         <KpiCard label="Estres Prom."  value={KPI.avgStress}       unit="/10"   sub="Escala 1-10"              color={C.red}    />
-        <KpiCard label="Sueno Prom."   value={KPI.avgSleep}        unit="h"     sub="Rango: 4-11h"             color={C.teal}   />
+        <KpiCard label="Sueño Prom."   value={KPI.avgSleep}        unit="h"     sub="Rango: 4-11h"             color={C.teal}   />
         <KpiCard label="Productividad" value={KPI.avgProductivity} unit="/100"  sub="Puntuacion global"        color={C.orange} />
         <KpiCard label="Act. Fisica"   value={KPI.avgPhysical}     unit="h/sem" sub="Horas semanales"          color={C.green}  />
       </div>
